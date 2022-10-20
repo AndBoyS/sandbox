@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "sandbox"
+version = "0.1.0"
+description = ""
+authors = ["AndBoyS <andboyxd@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+jupyter = "^1.0.0"
+Pillow = "^9.2.0"
+numpy = "^1.23.4"
+pandas = "^1.5.1"
+seaborn = "^0.12.1"
+opencv-python = "^4.6.0.66"
+scikit-image = "^0.19.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
