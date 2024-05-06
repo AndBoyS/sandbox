@@ -1,20 +1,33 @@
+[tool.ruff]
+line-length = 120
+
+[tool.mypy]
+strict = true
+disallow_untyped_calls = false
+allow_redefinition = true
+
 [tool.poetry]
 name = "sandbox"
 version = "0.1.0"
 description = ""
 authors = ["AndBoyS <andboyxd@gmail.com>"]
-readme = "README.md"
+package-mode = false
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = "~3.11"
+torch = "2.0.0"
 jupyter = "^1.0.0"
-Pillow = "^9.2.0"
-numpy = "^1.23.4"
-pandas = "^1.5.1"
-seaborn = "^0.12.1"
-opencv-python = "^4.6.0.66"
-scikit-image = "^0.19.3"
-
+pillow = "^10.3.0"
+numpy = "^1.26.4"
+pandas = "^2.2.2"
+seaborn = "^0.13.2"
+opencv-contrib-python = "^4.9.0.80"
+scikit-learn = "^1.4.2"
+mypy = "^1.10.0"
+ruff = "^0.4.3"
+types-pillow = "^10.2.0.20240423"
+types-tqdm = "^4.66.0.20240417"
+tqdm = "^4.66.4"
 
 [build-system]
 requires = ["poetry-core"]
